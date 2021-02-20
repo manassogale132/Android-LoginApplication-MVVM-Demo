@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">LoginApplication</string>
+    <string name="validation_error_enter_email">Please enter Email</string>
+    <string name="validation_error_invalid_email">Please enter Valid Email</string>
+    <string name="validation_error_enter_password">Please enter Password</string>
+    <string name="validation_error_invalid_password"><![CDATA[Password must be > 6 characters]]></string>
 </resources>

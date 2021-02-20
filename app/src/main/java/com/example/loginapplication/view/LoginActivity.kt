@@ -80,7 +80,7 @@ class LoginActivity : AppCompatActivity() {
 
     private fun checkCurrentAuthState() {
         viewModel.currentUserState.observe(this, Observer { userState ->
-            // this block will execute whenever there a new value in live-data is posted
+            // this block will execute whenever there is a new value posted in live-data
 
             when (userState) {
                 UserState.Loading -> {
@@ -88,12 +88,12 @@ class LoginActivity : AppCompatActivity() {
                 }
 
                 is UserState.Success -> {
-                    // can dismiss progress bar to dismiss progress bar
+                    // can dismiss progress bar to dismiss loading state
                     updateUI(userState.currentUser)
                 }
 
                 is UserState.Failure -> {
-                    // can dismiss progress bar to dismiss progress bar
+                    // can dismiss progress bar to dismiss loading state
                     userState.exception.printStackTrace()
 
                     // can check for custom exception for invalid email or password

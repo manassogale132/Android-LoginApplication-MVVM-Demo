@@ -1,14 +1,14 @@
-package com.example.loginapplication
+package com.example.loginapplication.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.util.Patterns
 import android.widget.Toast
+import com.example.loginapplication.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_register.*
-import java.lang.Exception
 
 
 class RegisterActivity : AppCompatActivity() {

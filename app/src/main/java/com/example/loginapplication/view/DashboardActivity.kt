@@ -1,9 +1,10 @@
-package com.example.loginapplication
+package com.example.loginapplication.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.example.loginapplication.R
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_dashboard.*
 
@@ -20,7 +21,7 @@ class DashboardActivity : AppCompatActivity() {
         logoutBtn.setOnClickListener {
             auth.signOut()
             Toast.makeText(baseContext,"Logged Out", Toast.LENGTH_SHORT).show()
-            startActivity(Intent(this,LoginActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }
     }
